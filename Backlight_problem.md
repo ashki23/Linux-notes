@@ -1,4 +1,4 @@
-## Backlight problem
+## Changing screen backlight from terminal
 
 One day, your laptop keyboard decides to not change the backlight of your screen! What we can do? On Linux`xbackligh` let us 
 change the brigness of the screen through terminal. On a Debian based distro, use the following to install `xbackligh`:
