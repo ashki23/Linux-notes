@@ -45,7 +45,7 @@ wpa_passphrase netname >> /etc/wpa_supplicant/wpa_supplicant.conf
 
 first kill all running wpa instances:
 ```bash
-pkill wpa_supplicant
+sudo pkill wpa_supplicant
 ```
 
 Then run:
