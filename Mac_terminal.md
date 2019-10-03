@@ -15,6 +15,9 @@ alias ls='ls -G'
 ### Use Option as Meta key
 To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
 
+### Exit shell and close the window
+To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
+
 ### Add Emacs config file `~/.emacs`:
 ```bash
 ;; Personal information
