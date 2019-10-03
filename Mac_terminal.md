@@ -12,6 +12,9 @@ alias ls='ls -G'
 
 **Note:** To be able to keep above changes, you need to open (create if not exist) `.bash_profile` file and add the above commands in that file. You should logout and login to see the changes.
 
+### Use Option as Meta key
+To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
+
 ### Add Emacs config file `~/.emacs`:
 ```bash
 ;; Personal information
