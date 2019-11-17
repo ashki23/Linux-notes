@@ -1,0 +1,95 @@
+#+TITLE: Org mode essentials
+#+AUTHOR: Ashkan Mirzaee
+#+LANGUAGE: en
+#+OPTIONS: H:2 num:nil toc:nil
+
+"/Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and 
+effective plain-text system./" - [[https://orgmode.org][Org mode]]
+
+Recent [[https://www.gnu.org/software/emacs/][Emacs]] text editor includes Org mode, to begin, use =emacs .test.org= 
+to create an Org file. See [[https://ashki23.github.io/shell.html#text_editors][here]] to learn basic Emacs commands.
+
+** Resources
+  - [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org mode beginning at the basics]] 
+  - [[https://orgmode.org/worg/org-tutorials/index.html][Org tutorials]]
+
+* Introduction
+  This is an intro to *org-mode* and first let's learn how to:
+  - insert headlines (=M-enter=) /- press =M-enter= to go to the next line/
+  - move headlines up and down (=M-up/down=)
+  - fold/unfold (=tab/S-tab=)
+  - insert blocks 
+    - example (=<e-tab=)
+    - source code (=<s-tab=) 
+      - for example org/bash/python
+  - create tables
+  - create TODO items
+  - save (=C-x C-s=), export (=C-c C-e=), and exit (=C-x C-c=)
+
+Let's try them in Emacs by (I used =<s-tab org= to create the block in below):
+
+#+BEGIN_SRC org
+ * First Header
+   This is an intro to *org-mode*. We want to learn how to:
+   - insert headlines/list (=M-enter=)
+   - move headlines up and down (=M-up/down=)
+   - fold/unfold (=tab/S-tab=)
+   - insert blocks 
+     - example (=<e-tab=)
+     - source code (=<s-tab=)
+       - for example org/bash/python
+   - save (=C-x C-s=), export (=C-c C-e=), and exit (=C-x C-c=)
+#+END_SRC
+
+  Use =M-up/down= to see how easy you can move headlines and use =C-c C-e h o= to see the outputs in your browser.
+
+  *Note* that /unordered/ lists start with *-,+,or \** and /ordered/ lists start with *a number and a dot* and descriptions use *::*.
+
+  - *For example* :: This is an examle of a /discription/.
+
+  And this is an orderd list:
+    1. First (press =M-enter=)
+    2. Second (press =M-enter=)
+    3. Third is a link to [[https://orgmode.org/][org-mode]] website
+
+#+BEGIN_SRC org
+- *For example* :: This is an examle of a /discription/.
+
+And this is an orderd list:
+  1. First (press =M-enter=)
+  2. Second (press =M-enter=)
+  3. Third is a	link to	[ [https://orgmode.org/][org-mode] ] website
+#+END_SRC
+
+** Tables
+   The following is the key abbriviations:
+ 
+| Name    | key   | Abbriviation |
+|---------+-------+--------------|
+| Control | Ctrl  | C            |
+| Meta    | Alt   | M            |
+| Shift   | Shift | S            |
+
+#+BEGIN_SRC org                                                                                                                                               
+ | Name    | key   | Abbriviation |
+ |---------+-------+--------------|
+ | Control | Ctrl  | C            |
+ | Meta    | Alt   | M            |
+ | Shift   | Shift | S            |
+#+END_SRC 
+
+   Note that to create above table you only need to insert =|Name|Key|Abbriviation= and press =tab= to make new row 
+   and insert =-tab= to draw the hline and press =tab=. Also you can use =M-up/down= to move rows or =M-S-up/down= 
+   to move columns (it might be different in different OS). You also can create a new row and add =<c>= to the last column to 
+   center-align the last coulmn (use =<l>= or =<r>= for left and right align).
+
+** Basic TODO
+   To create a TODO list you only need:
+
+#+BEGIN_SRC org
+ ** TODO learn org-mode
+ ** DONE learn emacs
+    DEADLINE: <2019-11-16 Sat>
+#+END_SRC
+
+   To change a TODO task to DONE or remove it use =S-left/right=. Use =C-c C-d= to add a deadline. 
