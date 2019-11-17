@@ -6,8 +6,8 @@
 "/Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and 
 effective plain-text system./" - [[https://orgmode.org][Org mode]]
 
-Recent [[https://www.gnu.org/software/emacs/][Emacs]] text editor includes Org mode, to begin, use =emacs .test.org= 
-to create an Org file. See [[https://ashki23.github.io/shell.html#text_editors][here]] to learn basic Emacs commands.
+Recent [[https://www.gnu.org/software/emacs/][Emacs]] text editor includes Org mode, to begin, use =emacs test.org= 
+to create an Org file by Emacs. See [[https://ashki23.github.io/shell.html#text_editors][here]] to learn basic Emacs commands.
 
 ** Resources
   - [[https://orgmode.org/worg/org-tutorials/org4beginners.html][Org mode beginning at the basics]] 
