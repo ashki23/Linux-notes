@@ -1,7 +1,7 @@
 # Emacs config
 
-In the home directory `cd ~`, use `nano .emacs` to creat Emacs config file then insert the following to make your 
-very preliminary hacks: 
+In the home directory `cd ~`, use `nano .emacs` to create Emacs config file then insert the following to make your
+very preliminary configurations by: 
 ```
 ;; Add MELPA
 (package-initialize)
@@ -23,8 +23,7 @@ very preliminary hacks:
 
 ## Install packages
 To install a new package, first press `M-x` and type `package-refresh-contents` to fetch all packages and then use 
-`M-x package-install` and enter the new package's name. To see list of the available packages use `M-x package-list-packages`. 
-For example you can install Markdown-mode, htmlize and ESS packages with:
+`M-x package-install` and enter the new package's name. To see list of the available packages use `M-x package-list-packages`. For example you can install Markdown-mode, htmlize and ESS packages with:
 ```
 M-x package-install markdown-mode
 M-x package-install htmlize
@@ -37,7 +36,7 @@ To delete packages, use `M-x package-delete` and enter the package's name. Note 
 ## Customize faces
 An easy way to change the appearance of Emacs is changing faces. `M-x list-faces-display` shows all of the faces that currently defined and you may modify them (use GUI Emacs to access them by clicking). To customize certain faces, use `M-x customize-face` and select the face that you wnat to change (press tab to see all options).
 
-Also, you can customize faces from `.emacs` config file. For instance:
+Also, you are able to customize faces from Emacs config file. For instance by adding following to `.emacs` file you will change some faces in the Emacs terminal mode:
 ```
 ;; Customize faces
 (custom-set-faces
@@ -58,5 +57,42 @@ Also, you can customize faces from `.emacs` config file. For instance:
  '(minibuffer-prompt ((t (:foreground "lime green" :weight bold)))))
  ```
 
-To change the theme, `M-x load-theme`, then press `tab` to show a list of available themes. To clear theme, `M-x disable-theme`. 
+To change the theme, `M-x load-theme`, then press `tab` to show a list of available themes. To clear theme, `M-x disable-theme`.
+
+## Commands
+The following are some important commands in Emacs. Note that `C` is `ctrl` and `M-` is `alt`.
+
+- `C-x C-c`: exit
+- `C-z`: suspend
+- `C-k`: kill the line
+- `C-w`: cut the line/text 
+- `M-w`: copy the line/text
+- `C-y`: uncut/paste the line/text (yank)
+- `C-space arrow keys`: select text
+- `C-shift arrow keys`: select paragraphs
+- `C-x u`: undo
+- `C-a`: move to the beginning of the line
+- `C-e`: move to the end of the line
+- `C-home`: move to the beginning of the buffer
+- `C-end`: move to the end of the buffer
+- `M-g g`: go to line
+- `C-s`/`C-r`: search
+- `M-%`: replace
+- `C-g`: stop a command
+- `C-x C-f`: make/open a file as a new buffer
+- `C-x b`: change the buffer
+- `C-x k`: kill the buffer
+- `C-x 1`: close other windows
+- `C-x 0`/`q`: close/quit windows
+- `C-x o`: switch to other windows
+- `C-h ?`: help list
+- `C-h t`: tutorial 
+- `C-h d`: search help for a pattern
+- `C-h c`: show help for the command
+- `M-x <command>`: run commands
+- `M-x ispell`: spell check; enter the suggested `digit` or `a` to accept or `r` to rewrite
+- `M-x package-install`: install packages 
+- `M-x package-list-packages`: list of packages
+
+Find the Emacs manual [here](https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html).
 
