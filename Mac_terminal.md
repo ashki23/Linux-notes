@@ -26,7 +26,7 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 ```
 
 ### Add Emacs config file `~/.emacs`:
-```bash
+```
 ;; Add MELPA
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
