@@ -1,5 +1,7 @@
-# Emacs config
+# Emacs: a powerfull text editor
+If you are working on you codes alot, you always looking for a good text editor to make life easier for you. Many would like to use IDEs to write and run their codes which is good for small programs. But as long as you are working on large projects with a lot of code writing, you might find text editing very tedius. A good text editor will help you to write and modify you codes easier. [Emacs](https://www.gnu.org/software/emacs/) is one of the best editors that could help alot.
 
+## Config file
 In the home directory `cd ~`, use `nano .emacs` to create Emacs config file then insert the following to make your
 very preliminary configurations by: 
 ```
