@@ -35,9 +35,28 @@ To delete packages, use `M-x package-delete` and enter the package's name. Note 
 `C-g` to cancel any actions and `q` to close buffers in Emacs. 
 
 ## Customize faces
-An easy way to change the appearance of Emacs is changing faces. `M-x list-faces-display` shows all of the faces that currently 
-defined and you may modify them (use GUI Emacs to access them by clicking). To customize certain faces, use `M-x customize-face` 
-and select the face that you wnat to change (press tab to see all options).
+An easy way to change the appearance of Emacs is changing faces. `M-x list-faces-display` shows all of the faces that currently defined and you may modify them (use GUI Emacs to access them by clicking). To customize certain faces, use `M-x customize-face` and select the face that you wnat to change (press tab to see all options).
+
+Also, you can customize faces from `.emacs` config file. For instance:
+```
+;; Customize faces
+(custom-set-faces
+ '(font-lock-builtin-face ((t (:foreground "SkyBlue1"))))
+ '(font-lock-comment-delimiter-face ((t (:foreground "salmon"))))
+ '(font-lock-comment-face ((t (:foreground "chocolate1" :slant oblique))))
+ '(font-lock-constant-face ((t (:foreground "lime green"))))
+ '(font-lock-doc-face ((t (:foreground "light coral" :slant oblique))))
+ '(font-lock-function-name-face ((t (:foreground "green" :weight bold))))
+ '(font-lock-keyword-face ((t (:foreground "SteelBlue1" :weight bold))))
+ '(font-lock-preprocessor-face ((t (:foreground "cornflower blue" :slant italic))))
+ '(font-lock-regexp-grouping-backslash ((t (:weight bold))))
+ '(font-lock-regexp-grouping-construct ((t (:weight bold))))
+ '(font-lock-string-face ((t (:foreground "violet" :slant italic))))
+ '(font-lock-type-face ((t (:foreground "green" :weight bold))))
+ '(font-lock-variable-name-face ((t (:foreground "lime green"))))
+ '(font-lock-warning-face ((t (:foreground "dark orange" :weight bold))))
+ '(minibuffer-prompt ((t (:foreground "lime green" :weight bold)))))
+ ```
 
 To change the theme, `M-x load-theme`, then press `tab` to show a list of available themes. To clear theme, `M-x disable-theme`. 
 
