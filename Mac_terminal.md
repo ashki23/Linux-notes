@@ -27,9 +27,13 @@ alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 ### Add Emacs config file `~/.emacs`:
 ```bash
+;; Add MELPA
+(package-initialize)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+
 ;; Personal information
-(setq user-full-name "Ashkan Mirzaee"
-      user-mail-address "ashkan.m23@gmail.com")
+(setq user-full-name "Your Name"
+      user-mail-address "your@email.com")
 
 ;; Backup in one place
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup")))
