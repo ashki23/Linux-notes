@@ -85,6 +85,7 @@ The following is the key abbriviations:
 #+END_SRC
 
 Note that to create above table you only need to insert =|Name|Key|Abbriviation= and press =tab= to make new row and insert =-tab= to draw the hline and press =tab=. Also you can use =M-up/down= to move rows or =M-S-up/down= to move columns (it might be different in different OS). You also can create a new row and add =<c>= to the last column to center-align the last coulmn (use =<l>= or =<r>= for left and right align).
+
 ** Basic TODO
 To create a TODO list you only need:
 #+BEGIN_SRC org
