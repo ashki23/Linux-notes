@@ -13,4 +13,6 @@ sudo apt update
 sudo apt install woeusb
 ``` 
 
-**Note:** on HP laptops you might need to enable `legacy support` in `Boot Options` under `System Configuration` in Boot Option Menu. To access to the Boot Option Menu restart the computer and press `Ecs` untill the boot menu shows up. Also, you might change the GRUB menu in your linux computer to access boot menu at boot-time. To do that, open `/etc/default/grub` file and change `GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and `run sudo update-grub` to apply changes. 
+**HP:** On HP laptops you need to enable `legacy support` in `Boot Options` under `System Configuration`. To access to the Boot Option Menu restart the computer and press `Ecs` untill the boot menu shows up.
+
+**GRUB:** You can change the GRUB settings in your Linux computer to access boot menu at the boot-time. To do that, open `/etc/default/grub` file and change `GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and `run sudo update-grub` to apply changes. 
