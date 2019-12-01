@@ -10,7 +10,7 @@ alias grep='grep --color=auto'
 alias ls='ls -G'
 ```
 
-**Note:** To be able to keep above changes, you need to open (create if not exist) `.bash_profile` file in home directory and add the above commands in that file. You should logout and login to see the changes.
+**Note:** To be able to keep above changes, you need to open (create if not exist) `.bash_profile` (or `.zshrc` if you are using zsh) file in home directory and add the above commands in that file. You should logout and login to see the changes.
 
 ### Use Option as Meta key
 To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
@@ -19,7 +19,7 @@ To active this option, open `Terminal > Prefences` and select `Keyboard` tab and
 To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
 
 ### Install Emacs
-You can download Emacs from [here](https://emacsformacosx.com) and install on your mac. Add the following line to the `.bash_profile` to active `emacs` command in the terminal.
+You can download Emacs from [here](https://emacsformacosx.com) and install on your mac. Add the following line to the `.bash_profile` (or `.zshrc`) to active `emacs` command in the terminal.
 
 ```bash
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
