@@ -4,7 +4,7 @@ To create a Windows bootable USB follow the seteps in here. Very briefly:
 2. Use GParted to format the USB and create **two** partitions, one that is FAT32 (64 MB) and will hold an EFI bootloader and the other is NTFS (>6 GB) and holds Windows installation files
 3. Open Windows 10 `ios` file with `Disk Image Mounter` and copy all files into the NTFS partiotion
 4. Download [uefi-ntfs.img](https://github.com/pbatard/rufus/tree/master/res/uefi) deriver
-5. Open `img` file with `Disk Image Mounter` and copy entire **EFI** folder to the FAT32 partition to make the USB bootable 
+5. Open `uefi-ntfs.img` file with `Disk Image Mounter` and copy entire **EFI** folder to the FAT32 partition to make the USB bootable 
 
 Also, we can use WoeUSB to creat Windows images. Use the following to install it: 
 ```bash
