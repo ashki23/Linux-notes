@@ -1,4 +1,4 @@
-## Connect to a WPA/WPA2 Wi-Fi network using Linux command line
+## Connect to a WPA/WPA2 Wi-Fi network
 Source: [Linux Commando](https://linuxcommando.blogspot.com/2013/10/how-to-connect-to-wpawpa2-wifi-network.html)
 
 *If you have a **Raspberry Pi**, before using the following, open terminal and try `sudo raspi-config`. Select 
