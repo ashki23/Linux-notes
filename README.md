@@ -1,6 +1,14 @@
 # Linux-notes
 
-This is a general repository about Unix shell, Linux distros. You may find some topics about Debian, Raspbian, Ubuntu and other distros in addition to several helps for debugging some hardware and software issues and more.
+This is a general repository about Unix shell, Linux distros. You may find some topics about Debian, Raspbian, Ubuntu and other distros in addition to several helps for debugging some hardware and software issues and more. The following is list of content of the repository:
+- [Linux: start from scratch](https://github.com/ashki23/Linux-notes/blob/master/Linux-intro.md)
+- [Some configs for mac terminal](https://github.com/ashki23/Linux-notes/blob/master/Mac_terminal.md)
+- [Raspberry Pi](https://github.com/ashki23/Linux-notes/blob/master/Raspberry_Pi.md)
+- [Make a bootable Windows 10 USB](https://github.com/ashki23/Linux-notes/blob/master/Bootable_Windows.md)
+- [Changing screen backlight from terminal](https://github.com/ashki23/Linux-notes/blob/master/Backlight_problem.md)
+- [Finding inserted SD card](https://github.com/ashki23/Linux-notes/blob/master/SD_cards.md)
+- [Enable tapping on touchpad](https://github.com/ashki23/Linux-notes/blob/master/Touchpad_problem.md)
+- [Connect to a WPA/WPA2 Wi-Fi network](https://github.com/ashki23/Linux-notes/blob/master/WiFi_problem.md)
 
 ---
 Copyright 2018-2019, Ashkan Mirzaee. Sourcecode licensed under the GNU General Public License, Version 3.0. Documentation licensed under CC BY-SA 3.0.
