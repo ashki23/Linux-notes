@@ -1,7 +1,7 @@
 # Make a bootable Windows 10 USB
 *[Ashkan Mirzaee](https://ashki23.github.io/index.html) - November 2019*
 
-To create a Windows bootable USB follow the seteps:
+To create a Windows bootable USB, follow the seteps:
 1. Download [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO)
 2. Use GParted to format the USB and create a NTFS partition 
 3. Install WoeUSB by: 
@@ -12,9 +12,11 @@ sudo apt install woeusb
 ```
 4. Open WoeUSB and copy the Windows image to the USB drive  
 
+**Note:** if you can accecss to a Windows device, that would be a better way to use [Rufus](https://rufus.ie/) to creat the bootable USB.
+
 **HP users:** On HP laptops you need to enable `legacy support` in `Boot Options` under `System Configuration`. To access to the Boot Option Menu restart the computer and press `Ecs` untill the boot menu shows up.
 
-**GRUB:** You can change the GRUB settings in your Linux computer to access boot menu at the boot-time. To do that, open `/etc/default/grub` file and change `GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and `run sudo update-grub` to apply changes. 
+**GRUB:** You can change the GRUB settings in your Linux computer to access boot menu at the boot-time. To do that, open `/etc/default/grub` file and change `GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and `run sudo update-grub` to apply changes.
 
 ---
 Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
