@@ -1,7 +1,7 @@
 # Debugging
 *[Ashkan Mirzaee](https://ashki23.github.io/index.html) - July 2019*
 
-## Changing screen backlight from terminal
+## Change screen backlight
 We can use `xbackligh` package to change brightness of the screen through terminal. On a Debian based distro, use the following to install `xbackligh`:
 
 ```bash
@@ -39,7 +39,7 @@ Note that if you could not find the "intel_backligh" directory before, change "i
  
 Now, again close the terminal, logout and login, and try `xbacklight = 20`. It should work! Note that changes in backlight level are temprary and the screen backlight will back to the default level after robooting. 
  
-## Finding an inserted SD card
+## Find an inserted SD card
 If SD card is not recognized by default, we might be able to find it in terminal. The following commands show some information about the inserted SD card:
 ```bash
 lsblk: list block devices
@@ -54,7 +54,7 @@ dmseg: display message or driver message
 By these command we can find name and directory of the SD card and try to mount it. But if the card still is unknown then 
 your card might be dead. Check all errors in the `dmseg` command output to find more information. 
 
-## Formating SD cards
+## Format SD cards
 To format a SD card, use the following commnands:
 ```bash
 ## FAT
