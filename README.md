@@ -5,10 +5,7 @@ This is a general repository about Unix shell, Linux distros. You may find some 
 - [Some configs for mac terminal](https://github.com/ashki23/Linux-notes/blob/master/Mac_terminal.md)
 - [Raspberry Pi](https://github.com/ashki23/Linux-notes/blob/master/Raspberry_Pi.md)
 - [Make a bootable Windows 10 USB](https://github.com/ashki23/Linux-notes/blob/master/Bootable_Windows.md)
-- [Changing screen backlight from terminal](https://github.com/ashki23/Linux-notes/blob/master/Backlight_problem.md)
-- [Finding inserted SD card](https://github.com/ashki23/Linux-notes/blob/master/SD_cards.md)
-- [Enable tapping on touchpad](https://github.com/ashki23/Linux-notes/blob/master/Touchpad_problem.md)
-- [Connect to a WPA/WPA2 Wi-Fi network](https://github.com/ashki23/Linux-notes/blob/master/WiFi_problem.md)
+- [Debugging](https://github.com/ashki23/Linux-notes/blob/master/Debugging.md)
 
 ---
 Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
