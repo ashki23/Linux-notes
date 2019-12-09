@@ -42,14 +42,15 @@ Now, again close the terminal, logout and login, and try `xbacklight = 20`. It s
 ## Find an inserted SD card
 If SD card is not recognized by default, we might be able to find it in terminal. The following commands show some information about the inserted SD card:
 ```bash
+df: report file system disk space usage
 lsblk: list block devices
 lsblk | grep -v loop: shows only hard/sd/usb drives
 lsusb: list USB devices
 lspci: list all PCI devices
 fdisk: manipulate disk partition table
 fdisk -l: shows list of disks
-mount/umount: mount/unmount a filesystem
-dmseg: display message or driver message
+mount/umount <path>: mount/unmount a filesystem
+eject <path>: eject the SD card
 ```
 By these command we can find name and directory of the SD card and try to mount it. But if the card still is unknown then your card might be dead. Check all errors in the `dmseg` command output to find more information. 
 
@@ -73,7 +74,7 @@ dd if=<image path> of=<SD path>
 # Example
 dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
 ```
-We can find the SD card or USB drive path by `lsblk` or `lsudb`.
+We can find the SD card or USB drive path by `lsblk` or `df`
 
 Also, [Etcher](https://www.balena.io/etcher/) is a very common and useful tool to fash OS images to SD cards & USB drives.
 
