@@ -66,7 +66,7 @@ sudo mkfs.ntfs /dev/device_name
 sudo mkfs.ext4 /dev/device_name
 ```
 ## Flash OS images
-In Unix terminal, we can use `dd` command to convert and copy an image file to a SD card by: 
+In Unix terminal, we can use `dd` command to convert and copy a Linux image file to a SD card by: 
 ```bash
 dd if=<image path> of=<SD path>
 
