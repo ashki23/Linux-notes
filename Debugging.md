@@ -51,8 +51,7 @@ fdisk -l: shows list of disks
 mount/umount: mount/unmount a filesystem
 dmseg: display message or driver message
 ```
-By these command we can find name and directory of the SD card and try to mount it. But if the card still is unknown then 
-your card might be dead. Check all errors in the `dmseg` command output to find more information. 
+By these command we can find name and directory of the SD card and try to mount it. But if the card still is unknown then your card might be dead. Check all errors in the `dmseg` command output to find more information. 
 
 ## Format SD cards
 To format a SD card, use the following commnands:
@@ -67,20 +66,21 @@ sudo mkfs.ntfs /dev/device_name
 sudo mkfs.ext4 /dev/device_name
 ```
 ## Flash OS images
-[Etcher](https://www.balena.io/etcher/) is a very common and useful tool to fash OS images to SD cards & USB drives. In Unix 
-terminal you can use `dd` command to convert and copy a file (image) whithout any extra software. For example: 
+In Unix terminal, we can use `dd` command to convert and copy an image file to a SD card by: 
 ```bash
-dd if=<image.img path> of=<disk path i.e. /dev/mmcblk0> bs=4M status=progress conv=fsync
-```
+dd if=<image path> of=<SD path>
 
-You can find the SD card or USB drive path `lsblk` or `lsudb`.
+# Example
+dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
+```
+We can find the SD card or USB drive path by `lsblk` or `lsudb`.
+
+Also, [Etcher](https://www.balena.io/etcher/) is a very common and useful tool to fash OS images to SD cards & USB drives.
 
 ## Enable tapping on touchpad
 Source: [Wiki debian](https://wiki.debian.org/SynapticsTouchpad)
 
-Sometime we cannot enable tapping on tuchpad through the setting menu. In this case, we can use 
-`sudo nano /etc/X11/xorg.conf.d/40-libinput.conf` to open `.conf` file with Nano text editor in terminal and add 
-the following under the `libinput touchpad catchall` identifier.
+Sometime we cannot enable tapping on tuchpad through the setting menu. In this case, we can use `sudo nano /etc/X11/xorg.conf.d/40-libinput.conf` to open `.conf` file with Nano text editor in terminal and add the following under the `libinput touchpad catchall` identifier.
 ```bash
 `Option "Tapping" "on"` 
 ```
@@ -89,8 +89,7 @@ Save changes (`ctrl + s`) and close (`ctrl + x`) editor and then close the termi
 ## Connect to a WPA/WPA2 Wi-Fi network
 Source: [Linux Commando](https://linuxcommando.blogspot.com/2013/10/how-to-connect-to-wpawpa2-wifi-network.html)
 
-*If you have a **Raspberry Pi**, before using the following, open terminal and try `sudo raspi-config`. Select 
-`Network Options` and enter network name and passphrase to connect to wifi.*
+*If you have a **Raspberry Pi**, before using the following, open terminal and try `sudo raspi-config`. Select `Network Options` and enter network name and passphrase to connect to wifi.*
 
 1- Find the wirless network's `Interface` name:
 ```bash
@@ -114,8 +113,7 @@ sudo ip link set wlan0 up
 /sbin/iw wlan0 link
 ```
 
-If it returns `Not connected` then go to the next step. For the next step you will need the wirless network's name and 
-password. If you do not know the network's name you may run:
+If it returns `Not connected` then go to the next step. For the next step you will need the wirless network's name and password. If you do not know the network's name you may run:
 ```bash
 wpa_cli
 > scan_results
@@ -145,8 +143,7 @@ Now check the connection again:
 ```bash
 /sbin/iw wlan0 link
 ``` 
-If the [NetworkManager](https://docs.ubuntu.com/core/en/stacks/network/network-manager/docs/) is installed (run `nmcli -v`) 
-then you may follow these steps:
+If the [NetworkManager](https://docs.ubuntu.com/core/en/stacks/network/network-manager/docs/) is installed (run `nmcli -v`) then you may follow these steps:
 
 ```bash
 nmcli d # show the status
