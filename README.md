@@ -5,6 +5,7 @@ This is a general repository about Unix shell, Linux distros. You may find some 
 - [Some configs for mac terminal](https://github.com/ashki23/Linux-notes/blob/master/Mac_terminal.md)
 - [Raspberry Pi](https://github.com/ashki23/Linux-notes/blob/master/Raspberry_Pi.md)
 - [Make a bootable Windows 10 USB](https://github.com/ashki23/Linux-notes/blob/master/Bootable_Windows.md)
+- [Install Linux images on MicroSD card](https://github.com/ashki23/Linux-notes/blob/master/Image_Linux.md)
 - [Debugging](https://github.com/ashki23/Linux-notes/blob/master/Debugging.md)
 
 ---
