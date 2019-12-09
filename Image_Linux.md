@@ -19,7 +19,7 @@ dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
 ```
 
 **Notes:**
-- [Etcher](https://www.balena.io/etcher/) is a very common and useful tool to fash OS images to SD cards & USB drives
+- [Etcher](https://www.balena.io/etcher/) is a very useful tool to fash OS images to SD cards & USB drives
 - To format a SD card to NTFS, use `sudo mkfs.ntfs /dev/sdb`
 
 ---
