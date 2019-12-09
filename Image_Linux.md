@@ -7,7 +7,7 @@ To install a Linux image on a MicroSD card, follow the seteps:
 ```
 df ## to find SD card path (e.g./dev/sdb)
 sudo umount /dev/sdb ## unmount the SD card
-sudo mkfs.vfat -n 'linux_image' /dev/sdb ## Format drive with the FAT32 file system format
+sudo mkfs.vfat /dev/sdb ## Format drive with the FAT32 file system format
 ```
 
 3. Use `dd` command to convert and copy of the Linux image to the SD card by:
@@ -20,6 +20,7 @@ dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
 
 **Notes:**
 - [Etcher](https://www.balena.io/etcher/) is a very useful tool to fash OS images to SD cards & USB drives
+- Use `-n` flag to add lables when formating a partion for example `sudo mkfs.vfat -n 'label' /dev/sdb` 
 - To format a SD card to NTFS, use `sudo mkfs.ntfs /dev/sdb`
 
 ---
