@@ -3,7 +3,7 @@
 
 To create a Windows bootable USB, follow the seteps:
 1. Download [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO)
-2. Use GParted to format the USB and create a NTFS partition 
+2. Use GParted to format the USB (`Device > Create Partition Table`) and add a NTFS partition (`Partition > New`) 
 3. Install WoeUSB by: 
 ```bash
 sudo add-apt-repository ppa:nilarimogard/webupd8
