@@ -12,7 +12,7 @@ sudo apt install woeusb
 ```
 4. Open WoeUSB and copy the Windows image to the USB drive  
 
-**Note:** if you can accecss to a Windows device, that would be a better way to use [Rufus](https://rufus.ie/) to creat the bootable USB.
+**Note:** if you accecss to a Windows device, you can use [Rufus](https://rufus.ie/) to creat the bootable USB.
 
 **HP users:** On HP laptops you need to enable `legacy support` in `Boot Options` under `System Configuration`. To access to the Boot Option Menu restart the computer and press `Ecs` untill the boot menu shows up.
 
