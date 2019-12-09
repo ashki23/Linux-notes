@@ -40,7 +40,7 @@ Note that if you could not find the "intel_backligh" directory before, change "i
 Now, again close the terminal, logout and login, and try `xbacklight = 20`. It should work! Note that changes in backlight level are temprary and the screen backlight will back to the default level after robooting. 
  
 ## Find an inserted SD card
-If SD card is not recognized by default, we might be able to find it in terminal. The following commands show some information about the inserted SD card:
+If SD card is not recognized by default, we might be able to find it in terminal. The following commands show information about the inserted SD card:
 ```bash
 df: report file system disk space usage
 lsblk: list block devices
@@ -49,34 +49,13 @@ lsusb: list USB devices
 lspci: list all PCI devices
 fdisk: manipulate disk partition table
 fdisk -l: shows list of disks
+```
+Use the following to unmount and eject SD cards:
+```
 mount/umount <path>: mount/unmount a filesystem
 eject <path>: eject the SD card
 ```
 By these command we can find name and directory of the SD card and try to mount it. But if the card still is unknown then your card might be dead. Check all errors in the `dmseg` command output to find more information. 
-
-## Format SD cards
-To format a SD card, use the following commnands:
-```bash
-## FAT
-sudo mkfs.vfat /dev/device_name
-
-## NTFS
-sudo mkfs.ntfs /dev/device_name
-
-## EXT4
-sudo mkfs.ext4 /dev/device_name
-```
-## Flash OS images
-In Unix terminal, we can use `dd` command to convert and copy a Linux image file to a SD card by: 
-```bash
-dd if=<image path> of=<SD path>
-
-# Example
-dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
-```
-We can find the SD card or USB drive path by `lsblk` or `df`
-
-Also, [Etcher](https://www.balena.io/etcher/) is a very common and useful tool to fash OS images to SD cards & USB drives.
 
 ## Enable tapping on touchpad
 Source: [Wiki debian](https://wiki.debian.org/SynapticsTouchpad)
