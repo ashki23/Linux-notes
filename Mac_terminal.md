@@ -1,17 +1,14 @@
 # Some configs for mac terminal 
 *[Ashkan Mirzaee](https://ashki23.github.io/index.html) - November 2019*
 
-### Grep default color option
-```bash
-alias grep='grep --color=auto'
-```
+### Zsh (or Bash) config
+Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in home directory and add the following commands:
 
-### Colored directories in `ls`:
-```bash
-alias ls='ls -G'
-```
+- Grep default color option: `alias grep='grep --color=auto'`
+- Colored directories in `ls`: `alias ls='ls -G'`
+- Git tab completion: `autoload -Uz compinit && compinit`
 
-**Note:** To be able to keep above changes, we need to open (create if not exist) `.bash_profile` (or `.zshrc` if using zsh) file in home directory and add the above commands in that file. We should logout and login to see the changes.
+**Note:** we should logout and login to see the changes.
 
 ### Use Option as Meta key
 To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
