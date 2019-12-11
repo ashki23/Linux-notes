@@ -4,11 +4,11 @@
 ### Zsh (or Bash) config
 Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in home directory and add the following commands:
 
-- Grep default color option: `alias grep='grep --color=auto'`
-- Colored directories in `ls`: `alias ls='ls -G'`
-- Git tab completion: `autoload -Uz compinit && compinit`
+- `grep` default color option: `alias grep='grep --color=auto'`
+- `ls` colored directories: `alias ls='ls -G'`
+- `git` tab completion: `autoload -Uz compinit && compinit`
 
-**Note:** we should logout and login to see the changes.
+**Note:** logout and login to see the changes.
 
 ### Use Option as Meta key
 To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
@@ -16,14 +16,14 @@ To active this option, open `Terminal > Prefences` and select `Keyboard` tab and
 ### Exit shell and close the window
 To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
 
-### Install Emacs
-We can download Emacs from [here](https://emacsformacosx.com). Add the following line to the `.bash_profile` (or `.zshrc`) to activate `emacs` command in the terminal.
+### Emacs
+Download Emacs from [here](https://emacsformacosx.com) and add the following line to the `.zshrc` (or `.bash_profile`) to activate `emacs` command in the terminal.
 
 ```bash
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 ```
 
-### Add Emacs config file `~/.emacs`:
+As a basic Emacs config, create `.emacs` file in the home directory and add the following:
 ```
 ;; Add MELPA
 (package-initialize)
