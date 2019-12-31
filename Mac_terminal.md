@@ -16,6 +16,9 @@ To active this option, open `Terminal > Prefences` and select `Keyboard` tab and
 ### Exit shell and close the window
 To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
 
+## Increase the cursor speed
+Go to the `System Preferences > Keyboard` and set `Delay Until Repeat` at the shotest level.
+
 ### Emacs
 Download Emacs from [here](https://emacsformacosx.com) and add the following line to the `.zshrc` (or `.bash_profile`) to activate `emacs` command in the terminal.
 
