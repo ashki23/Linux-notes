@@ -2,6 +2,7 @@
 
 This is a general repository about Unix shell, Linux distros. You may find some topics about Debian, Raspbian, Ubuntu and other distros in addition to several helps for debugging some hardware and software issues and more. The following is list of content of the repository:
 - [Linux: start from scratch](https://github.com/ashki23/Linux-notes/blob/master/Linux-intro.md)
+- [The Unix Shell](https://github.com/ashki23/Linux-notes/blob/master/Unix_shell.md)
 - [Some configs for mac terminal](https://github.com/ashki23/Linux-notes/blob/master/Mac_terminal.md)
 - [Raspberry Pi](https://github.com/ashki23/Linux-notes/blob/master/Raspberry_Pi.md)
 - [Make a bootable Windows 10 USB](https://github.com/ashki23/Linux-notes/blob/master/Bootable_Windows.md)
