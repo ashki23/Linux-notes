@@ -8,7 +8,7 @@ Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in h
 - `ls` colored directories: `alias ls='ls -G'`
 - `git` tab completion: `autoload -Uz compinit && compinit`
 
-**Note:** logout and login to see the changes.
+**Note:** After adding above commands, use `source .zshrc` to apply changes.
 
 ### Use Option as Meta key
 To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
@@ -16,8 +16,17 @@ To active this option, open `Terminal > Prefences` and select `Keyboard` tab and
 ### Exit shell and close the window
 To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
 
-## Increase the cursor speed
+### Increase the cursor speed
 Go to the `System Preferences > Keyboard`, make `Key Repeat` faster and `Delay Until Repeat` shorter.
+
+### Python3
+To have python3 and many more command line tools, install `xcode-select`. Use the following command in the terminal for installation:
+
+```bash
+xcode-select --install
+```
+
+**Note:** Only press `install` and ignore `get Xcode`.
 
 ### Emacs
 Download Emacs from [here](https://emacsformacosx.com) and add the following line to the `.zshrc` (or `.bash_profile`) to activate `emacs` command in the terminal.
