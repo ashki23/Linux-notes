@@ -18,7 +18,7 @@ diskutil eraseDisk FORMAT NEW_NAME /MOUNT_POINT
 # Example
 diskutil eraseDisk FAT32 RETROPEI /dev/disk2
 
-# Find mount point by:
+# To find mount point by:
 diskutil list
 
 # To unmount:
