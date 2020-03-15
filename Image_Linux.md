@@ -20,6 +20,9 @@ diskutil eraseDisk FAT32 RETROPEI /dev/disk2
 
 # Find mount point by:
 diskutil list
+
+# To unmount:
+diskutil unmountDisk /MOUNT_POINT
 ```
 
 3. Use `dd` command to convert and copy of the Linux image to the SD card by:
