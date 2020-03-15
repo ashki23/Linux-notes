@@ -10,7 +10,7 @@ sudo umount /dev/sdb ## unmount the SD card
 sudo mkfs.vfat /dev/sdb ## Format drive with the FAT32 file system format
 ```
 
-For another method, we can use `diskutil` tool in the terminal by:
+For another method, we can use `diskutil` tool in a terminal by:
 ```
 diskutil eraseDisk FORMAT NEW_NAME /MOUNT_POINT
 # Note: FORMAT and NAME should be capital
