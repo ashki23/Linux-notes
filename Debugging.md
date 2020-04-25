@@ -131,5 +131,22 @@ nmcli d wifi list $ shows wifi list
 nmcli d wifi connect <wifi_name> password <password> # connect the access point
 ```
 
+## Bluetooth audio
+If your bluetooth device is paired but there is no sound from it then it can be fixed by `pavucontrol`. Use the following to install and update the required packages:
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
+```
+Once you have installed these packages, it may be necessary to restart the bluetooth and pulseaudio services:
+
+```bash
+service bluetooth restart
+killall pulseaudio
+```
+
+After that you need to open `pavucontrol` and go to the Configuration and change Profile setting for the Built-in Audio to off.   
+
 ---
 Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
