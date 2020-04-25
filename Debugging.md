@@ -142,8 +142,8 @@ sudo apt install pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmwa
 Once you have installed these packages, it may be necessary to restart the bluetooth and pulseaudio services:
 
 ```bash
-service bluetooth restart
 killall pulseaudio
+service bluetooth restart
 ```
 
 After that you need to open `pavucontrol` and go to the Configuration and change Profile setting for the Built-in Audio to off.   
