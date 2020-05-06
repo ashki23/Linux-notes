@@ -75,9 +75,11 @@ explanation next to each command.
 ``` bash
 man command # user manual of the command (enter q to exit)
 command --help # display brief help
-date # show date and time 
-hostnme # show the host nsme
+uname # print operating system name
+alias # show alias 
+env # show all environmental variables
 w # show current users
+hostnme # show the host nsme
 whoami # show the user name
 id # shows your id
 passwd # change user password
@@ -85,56 +87,44 @@ nproc # show number of processors
 lscpu # list CPU, display information about the CPU architecture
 free -h # show amount of memory RAM 
 ps # report a snapshot of the current processes
-pwd # print working directory
-cd # change directory
-cd .. # back to the previous directory
-cd ~ # change to the home directory
-cd / # change to the system files directory
-ls # lists
-ls -a # lists all
-ls -al # lists all long
 file # determine file type
-cp # copy a file 
-cp -r # copy a directory
-ln # make links between files
-scp # secure copy a file
-scp -r # secure copy a directory
+date # show date and time 
+pwd # print working directory
+cd # change directory. Use cd .. or ~ or / to go back or home or system dir
+ls # lists. Use flages -al to see all files in long formats
+cp # copy a file. Use -r to copy a directory recursively 
+scp # secure copy a file. Use -r to copy a directory 
 sftp # secure file transfer program (SSH file transfer protocol)
 wget # the non-interactive network downloader (-O <newname> to rename)
-md5sum # compute MD5 message digest
-md5sum -c # check MD5 message digest
-tar -xzf # extract (x) a zip (z) file (f)
-tar -czf # create (c) a zip (z) file (f)
+curl # copy a url. Use -o to name the output 
+md5sum # compute MD5 message digest. Use -c to check the digits
+tar -c/xzf # to archive and create(c)/extract(x) a compressed(z) file(f)
+ln # make links between files
 mv # move
-rm # remove file
-rm -r # remove a directory
+rm # remove file. Use -r to remove a directory
 mkdir # make a directory
 rmdir # remove an empty directory
-install -dvp # make a directory (-d), verbose (-v) and parent (-p)
+install -dvp # make a directory(d), verbose(v) and parent(p)
 cat # concatenate files and print on the standard output
-zcat # concatenate compressed (zip) files 
+zcat # concatenate compressed (zip) files
+diff file1 file2 compare files line by line. Use -y for side by side and -q for report only when files differ
 less # to view the contents of a text file one screen at a time (less than a text editor)
 touch # generate a new file that contains no data
-chmod # change file mode for user (u), group (g) or other (o) to give (+) or take (-) permission for read (r), write (w), or execute (x) (example chmod u+r)
+chmod # change file mode for user(u), group(g) or other(o) to give(+) or take(-) permission for read(r), write(w), or execute(x) (example chmod u+r)
 echo # display a line of text ex. echo === $(date)
-cut # cut sections from each line of files
 cut -f <field number> -d <delimiter> # cut field number based on the delimiter
 grep # print lines matching a pattern ("global/regular expression/print")
-grep -o # print only the matched parts
-grep -P # interpret the pattern as a Perl-compatible regular expression (PCRE)
 sed # stream editor for filtering and transforming text
-tr # translate or delete characters (for example tr -d , removes comma)
+tr # translate or delete characters (for example `tr -d ,` removes comma)
 awk # pattern scanning and text processing language
-wc # word count; it counts the number of lines, words, and characters in files 
-wc -l # show number of lines
+wc # word count; it counts the number of lines(-l), words(-w), and characters(-m) of files 
 nl # number lines of files
 head -n <number> # output the n first lines of files
 tail -n <number> # output the n last lines of files
-sort # sort lines of text files (use flag -r for reverse)
-sort -n # sort numeric
-uniq # remove adjacent duplicated lines from input
-uniq -c # remove adjacent duplicated lines and prefix lines by the number of occurrences
-find # search for files in a directory hierarchy
+sort # sort lines of text files (use flag -r for reverse). Use -n to sort numerically
+uniq # remove adjacent duplicated lines from input. Use -c to see number of times the line occurred 
+find <dir> -name file_name # search for files in a directory hierarchy by name. Use -iname for case insensitive search
+which # locate a program file in the user's path
 history # show history of commnads
 !<number> # rerun the command with the number from history
 !! # rerun the last command (bang bang)
