@@ -1,5 +1,4 @@
 # Linux: start from scratch
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - April 2019*
 
 Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991 by Linus Torvalds ([Wikipedia](https://en.wikipedia.org/wiki/Linux)). Linux is typically packaged in Linux distributions (see [here](https://en.wikipedia.org/wiki/Linux_distribution)) which include the Linux kernel and supporting system software and libraries. Ubuntu is an open source and popular Linux distribution based on Debian. This article shows how to install and update Ubuntu distribution and provides a quick reference of helpful shortcuts, applications, and tips for software installation.
 
