@@ -1,5 +1,4 @@
 # The Unix Shell
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - April 2019*
 
 The Shell is a program which uses command-line interface, instead of graphical user interfaces (GUI), to run other programs rather than doing calculations itself. The most popular Unix Shell is Bash which is accessible by `ctrl+alt+t` keyboard shortcut in Linux computers. The following are some great Shell tutorials:
 
