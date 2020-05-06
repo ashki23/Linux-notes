@@ -1,4 +1,4 @@
-# Debugging
+# debugging
 *[Ashkan Mirzaee](https://ashki23.github.io/index.html) - July 2019*
 
 ## Change screen backlight
