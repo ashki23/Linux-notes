@@ -1,5 +1,4 @@
 ## Raspberry Pi
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - July 2019*
 
 There is a great instruction at [Raspberry project](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) 
 website to help you to set up your Pi. As a quick reference to set up your Raspberry Pi you need:
