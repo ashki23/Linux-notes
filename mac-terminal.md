@@ -1,5 +1,4 @@
 # Some configs for mac terminal 
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - November 2019*
 
 ### Zsh (or Bash) config
 Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in home directory and add the following commands:
