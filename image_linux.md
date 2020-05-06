@@ -1,5 +1,4 @@
 # Install Linux images on MicroSD cards
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - December 2019*
 
 To install a Linux image on a MicroSD card, follow the seteps:
 1. Download the Linux image
