@@ -1,5 +1,5 @@
 # Debugging
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html)
+*[Ashkan Mirzaee](https://ashki23.github.io/index.html)*
 
 ## Change screen backlight
 We can use `xbackligh` package to change brightness of the screen through terminal. On a Debian based distro, use the following to install `xbackligh`:
