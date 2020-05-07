@@ -73,8 +73,8 @@ The following is a list of basic Bash commands. You may find a short
 explanation next to each command.
 
 ``` bash
-man command # user manual of the command (enter q to exit)
-command --help # display brief help
+man <command> # user manual of the command (enter q to exit)
+<command> --help # display brief help
 uname # print operating system name
 alias # show alias 
 env # show all environmental variables
@@ -107,15 +107,15 @@ rmdir # remove an empty directory
 install -dvp # make a directory(d), verbose(v) and parent(p)
 cat # concatenate files and print on the standard output
 zcat # concatenate compressed (zip) files
-diff file1 file2 compare files line by line. Use -y for side by side and -q for report only when files differ
+diff <file1> <file2> # compare files line by line. Use -y for side by side and -q for report only when files differ
 less # to view the contents of a text file one screen at a time (less than a text editor)
 touch # generate a new file that contains no data
 chmod # change file mode for user(u), group(g) or other(o) to give(+) or take(-) permission for read(r), write(w), or execute(x) (example chmod u+r)
 echo # display a line of text ex. echo === $(date)
 cut -f <field number> -d <delimiter> # cut field number based on the delimiter
-grep # print lines matching a pattern ("global/regular expression/print")
+grep # print lines matching a pattern (global regular expression print)
 sed # stream editor for filtering and transforming text
-tr # translate or delete characters (for example `tr -d ,` removes comma)
+tr # translate or delete characters (for example 'tr -d ,' removes comma)
 awk # pattern scanning and text processing language
 wc # word count; it counts the number of lines(-l), words(-w), and characters(-m) of files 
 nl # number lines of files
