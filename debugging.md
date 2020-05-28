@@ -30,7 +30,7 @@ Close the terminal and logout the computer and login again. Now, try `xbacklight
   Section "Device"
           Identifier "Intel Graphics" 
           Driver "intel"
-          Option "Backlight"  "intel_backlight"
+          Option "Backlight" "intel_backlight"
   EndSection
  ```
  
