@@ -59,9 +59,16 @@ By these command we can find name and directory of the SD card and try to mount 
 ## Enable tapping on touchpad
 Source: [Wiki debian](https://wiki.debian.org/SynapticsTouchpad)
 
-Sometime we cannot enable tapping on tuchpad through the setting menu. In this case, we can use `sudo nano /etc/X11/xorg.conf.d/40-libinput.conf` to open `.conf` file with Nano text editor in terminal and add the following under the `libinput touchpad catchall` identifier.
+Sometime we cannot enable tapping on tuchpad through the setting menu. In this case, we can use `sudo nano /etc/X11/xorg.conf.d/40-libinput.conf` to create the following file with Nano text editor - note that you should create the `/etc/X11/xorg.conf.d/` if it is not exist:
+
 ```bash
-`Option "Tapping" "on"` 
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection 
 ```
 Save changes (`ctrl + s`) and close (`ctrl + x`) editor and then close the terminal. It should work now!
 
