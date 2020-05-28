@@ -28,10 +28,10 @@ sudo ln -s /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-LVDS-1/intel_bac
 Close the terminal and logout the computer and login again. Now, try `xbacklight = 20` to see the issue is solved or not. If not then we need to add a config file. To create the config file, use `sudo nano /etc/X11/xorg.conf` and insert:
 ```bash
   Section "Device"
-        Identifier  "Intel Graphics" 
-        Driver      "intel"
-        Option      "Backlight"  "intel_backlight"
-    EndSection
+          Identifier "Intel Graphics" 
+          Driver "intel"
+          Option "Backlight"  "intel_backlight"
+  EndSection
  ```
  
 Note that if you could not find the "intel_backligh" directory before, change "intel_backlight" to the directory of your  backlight settings.
