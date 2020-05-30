@@ -7,9 +7,7 @@ website to help you to set up your Pi. As a quick reference to set up your Raspb
 - HDMI monitor (your TV or computer monitor)
 - +5V ~ 2.5A mini USB power supply (a suitable iPad/Android charger will do)
 
-Before start, we need to download [NOOBS](https://www.raspberrypi.org/downloads/) and unzip the downloaded file and paste in 
-your micro SD card (make sure SD card is formated to FAT 32). Please see [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/3) 
-for more details.
+Before start, we need to download [NOOBS](https://www.raspberrypi.org/downloads/) and use Raspberry Pi Imager for an easy way to install Raspberry Pi OS to an SD card. Please see [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) for more details.
 
 When SD card, mouse and HDMI cable are attached, we are ready to install. To turn on your Pi just attach the mini USB charger. Then select the NOOBS image and press install. It takes about 10 minuts to install Raspberry Pi OS. Then finish the setup by selecting language and time zone, setting password, connecting to WiFi and updating software. 
 
