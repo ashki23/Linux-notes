@@ -154,5 +154,25 @@ service bluetooth restart
 
 After that you need to open `pavucontrol` and go to the Configuration and change Profile setting for the Built-in Audio to off.   
 
+## X11 forwarding
+
+I had an issue with X11 forwarding to my MacBook. Issue was solved by editing `/etc/ssh/sshd_config`. You should open the file and uncomment/add the following and edit them such that:
+
+```bash
+X11Forwarding yes
+X11DisplayOffset 10
+XAuthLocation /opt/X11/bin/xauth
+```
+
+And then restart SSH by:
+
+```bash
+sudo launchctl unload /System/Library/LaunchDaemons/ssh.plist
+sudo launchctl load -w /System/Library/LaunchDaemons/ssh.plist
+```
+
+Note that `XQuartz` should be installed in your Mac. 
+
+
 ---
 Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
