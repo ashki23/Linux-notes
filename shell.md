@@ -65,8 +65,6 @@ globbing pathnames typing `man 7 glob`.
     date. Note that for the environmental variables you cannot use `()`,
     for example `echo $HOME` or `echo ${HOME}` is the correct way
 
------
-
 ## Basic commands
 
 The following is a list of basic Bash commands. You may find a short
@@ -234,8 +232,6 @@ echo === $(hostname) $(date)
 echo === $(hostname) "date: $(date)"
 ```
 
------
-
 ## Pipes and Filters
 
 Now that we know a few basic commands, we can combine the programs and
@@ -289,8 +285,6 @@ wc -l < count.txt
 
 To find number of lines in the `count.txt`. Note that you also can use
 `wc -l count.txt` to find the number of lines.
-
------
 
 ## Loops and conditional constructs
 
@@ -356,8 +350,6 @@ if [ ! -e count.txt ]; then echo "File does not exist"; elif [ -e count.txt ]; t
 ```
 
 To see all the test expressions see `man test`.
-
------
 
 ## Text editors
 
@@ -430,10 +422,7 @@ The following are some important commands in Emacs. Note that `C-` is
   - `M-x package-install`: install packages
   - `M-x package-list-packages`: list of packages
 
-You may find more about Emacs in
-[here](https://ashki23.github.io/emacs.html).
-
------
+You may find more about Emacs in [here](emacs.html).
 
 ## Shell script
 

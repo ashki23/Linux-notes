@@ -129,7 +129,7 @@ The Shell is a program which uses command-line interface, instead of
 graphical user interfaces (GUI), to run other programs rather than doing
 calculations itself. The most popular Unix Shell is Bash which is
 accessible by `ctrl+alt+t` keyboard shortcut in Ubuntu. You may find
-more information [here](https://ashki23.github.io/shell.html).
+more information [here](shell.html).
 
 ### Remote connections
 
@@ -297,7 +297,7 @@ To install Git, use:
 sudo apt install git
 ```
 
-You may learn more about Git [here](https://ashki23.github.io/git.html).
+You may learn more about Git [here](git.html).
 
 ### Emacs
 
@@ -307,8 +307,7 @@ Emacs is a powerful text editor. Use the following to install Emacs:
 sudo apt install emacs
 ```
 
-You may learn more about Emacs
-[here](https://ashki23.github.io/emacs.html).
+You may learn more about Emacs [here](emacs.html).
 
 ### Python
 
@@ -379,7 +378,7 @@ rm -rf ~/anaconda3
 ```
 
 To learn more about managing environments by Conda see the instruction
-in [here](https://ashki23.github.io/python_env.html#miniconda).
+in [here](python_env.html#miniconda).
 
 ### R
 
