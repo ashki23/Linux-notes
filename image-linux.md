@@ -5,12 +5,12 @@ To install a Linux image on a MicroSD card, follow the seteps:
 2. On a Linux machine, use GParted to format the SD card (`Device > Create Partition Table`) and add a FAT32 partition (`Partition > New`). Or use `mkfs` in a terminal prompt by:
 
 ```bash
-df ## to find SD card path (e.g./dev/sdb)
+df ## to find SD card filesystem (e.g./dev/sdb)
 sudo umount /dev/sdb ## unmount the SD card
 sudo mkfs.vfat /dev/sdb ## Format drive with the FAT32 file system format
 
 # To re-mount the drive:
-sudo mount <file system> <mount on> ## e.g. /dev/sdb /media/$USER 
+sudo mount <filesystem> <mount on> ## e.g. /dev/sdb /media/$USER 
 ```
 
 For another method, we can use `diskutil` tool in a terminal by:
