@@ -10,7 +10,7 @@ sudo umount /dev/sdb ## unmount the SD card
 sudo mkfs.vfat /dev/sdb ## Format drive with the FAT32 file system format
 
 # To re-mount the drive:
-sudo mount <file system> <mount on> # e.g. /dev/sdb /media/$USER 
+sudo mount <file system> <mount on> ## e.g. /dev/sdb /media/$USER 
 ```
 
 For another method, we can use `diskutil` tool in a terminal by:
