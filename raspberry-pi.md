@@ -3,7 +3,7 @@
 There is a great instruction at [Raspberry project](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) 
 website to help you to set up your Pi. As a quick reference to set up your Raspberry Pi you need:
 - 8GB (or more) micro SD card
-- USB mouse
+- USB mouse/keyboard
 - HDMI monitor (your TV or computer monitor)
 - +5V ~ 2.5A mini USB power supply (a suitable iPad/Android charger will do)
 
@@ -19,9 +19,9 @@ To change the configuration from terminal, run `sudo raspi-config`: (Note: make 
 - Timezone/WLAN Country: `Localisation Options > Timezone/WLAN Country`
 - WIFI network: `System Options > Wireless LAN`
 
-After rebooting, we can easily connect to the Rasberry Pi through SSH or VNC. To find the IP address, open the VNC Server from the Menu Bar. Now, we can detach monitor and mouse from Pi and use a desktop or laptop to concent Pi.
+After rebooting, we can easily connect to the Rasberry Pi through SSH or VNC using the IP address. To find the local IP address, run `hostname -I` on terminal or open the VNC Server from the Menu Bar. Now, we can detach monitor and mouse from Pi and use a desktop or laptop to concent Pi remotely.
 
-To connect Pi through SSH open a terminal prompt in your computer and run `ssh pi@ip_address`. To connect through VNC open [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer and insert the IP address that you can find on the VNC Server main page. To learn more check [establishing a direct connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-direct) and a [cloud connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-cloud) for VNC Connect.
+To connect Pi through SSH open terminal in your computer and run `ssh pi@ip_address` or `ssh pi@raspberrypi.local`. To connect through VNC open [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer and insert the IP address. To learn more check [establishing a direct connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-direct) and a [cloud connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-cloud) for VNC Connect.
 
 If you are looking for booting Pi directly to the command-line, open `Main menu > Preferences > Raspberry Pi Configuration > System` and select Boot to CLI option. After rebooting Pi directly goes to the command-line mode. To go to the desktop mode run `startx`. 
 
