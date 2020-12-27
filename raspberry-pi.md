@@ -2,16 +2,18 @@
 
 There is a great instruction at [Raspberry project](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up) 
 website to help you to set up your Pi. As a quick reference to set up your Raspberry Pi you need:
+
 - 8GB (or more) micro SD card
 - USB mouse/keyboard
 - HDMI monitor (your TV or computer monitor)
 - +5V ~ 2.5A mini USB power supply (a suitable iPad/Android charger will do)
 
-Before start, we need to [Raspberry Pi OS](https://www.raspberrypi.org/downloads/). Use Raspberry Pi Imager for an easy way to install Raspberry Pi OS to an SD card. Please see [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) for more details.
+First, we need to write [Raspberry Pi OS](https://www.raspberrypi.org/downloads/) image to the SD card. Use Raspberry Pi Imager for an easy way to install Raspberry Pi OS to an SD card. Please see [here](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2) for more details.
 
-When SD card, mouse and HDMI cable are attached, we are ready to start. To turn on your Pi by attaching the mini USB charger. Then select the image and press install. It takes about 10 minuts to install Raspberry Pi OS (with desktop). Then finish the setup by selecting language and time zone, setting password, connecting to WiFi and updating software. 
+When SD card, mouse and HDMI cable are attached, we are ready to start. Turn on your Pi by attaching the mini USB charger. Then select the image and press install. It takes about 10 minuts to install Raspberry Pi OS (with desktop). Then finish the setup by selecting language and time zone, setting password, connecting to WiFi and updating software. 
 
-To change the configuration from terminal, run `sudo raspi-config`: (Note: make all the following changes together and then reboot your Pi once)   
+To change the configuration from terminal, run `sudo raspi-config`: (Note: make all the following changes together and then reboot your Pi once)
+
 - Full screen view: `Display Options > Undderscan: No` 
 - Adjust the resolution: `Display Options > Resolution: Selece your display resolution`
 - Enable SSH:  `Interface Options > SHH: Enable`
