@@ -27,7 +27,7 @@ xcode-select --install
 
 **Note:** Only press `install` and ignore `get Xcode`.
 
-## R
+### R
 R can be installed from binary from `https://mirror.las.iastate.edu/CRAN/`. To [uninstall R](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS), run the following:
 
 ```
