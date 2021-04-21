@@ -25,6 +25,16 @@ To have python3 and many more command line tools, install `xcode-select`. Use th
 xcode-select --install
 ```
 
+## R
+R can be installed from binary from `https://mirror.las.iastate.edu/CRAN/`. To uninstall R, run the following:
+
+```
+sudo rm -rf /Library/Frameworks/R.framework
+sudo rm -rf /Applications/R.app
+sudo rm -rf /usr/local/bin/R
+sudo rm -rf /usr/local/bin/Rscript
+```
+
 **Note:** Only press `install` and ignore `get Xcode`.
 
 ### Emacs
