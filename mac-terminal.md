@@ -38,10 +38,16 @@ sudo rm -rf /usr/local/bin/Rscript
 **Note:** Only press `install` and ignore `get Xcode`.
 
 ### Emacs
-Download Emacs from [here](https://emacsformacosx.com) and add the following line to the `.zshrc` (or `.bash_profile`) to activate `emacs` command in the terminal.
+Download Emacs from [here](https://emacsformacosx.com) and create a symbolic link from Emacs to `/usr/local/bin` by:
+
+```
+sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
+```
+
+To set `emacs -nw` as default add the following line to the `.zshrc` (or `.bash_profile`):
 
 ```bash
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+alias emacs='emacs -nw'
 ```
 
 As a basic Emacs config, create `.emacs` file in the home directory and add the following:
