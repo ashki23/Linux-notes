@@ -37,12 +37,16 @@ sudo rm -rf /usr/local/bin/R
 sudo rm -rf /usr/local/bin/Rscript
 ```
 
+The other option (better!) is creating an R virtual environment by Conda.
+
 ### Emacs
 Download Emacs from [here](https://emacsformacosx.com) and create a symbolic link from Emacs to `/usr/local/bin` by:
 
 ```
 sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
 ```
+
+Another option (better!) is crreating a virtual Conda env for Emacs.
 
 To set `emacs -nw` as default add the following line to the `.zshrc` (or `.bash_profile`):
 
