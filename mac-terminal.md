@@ -28,7 +28,7 @@ xcode-select --install
 **Note:** Only press `install` and ignore `get Xcode`.
 
 ### R
-R can be installed from binary from `https://mirror.las.iastate.edu/CRAN/`. To [uninstall R](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS), run the following:
+R can be installed from binary from [R mirror](https://mirror.las.iastate.edu/CRAN/). To [uninstall R](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS), run the following:
 
 ```
 sudo rm -rf /Library/Frameworks/R.framework
@@ -36,8 +36,6 @@ sudo rm -rf /Applications/R.app
 sudo rm -rf /usr/local/bin/R
 sudo rm -rf /usr/local/bin/Rscript
 ```
-
-The other option (better!) is creating an R virtual environment by Conda.
 
 ### Emacs
 Download Emacs from [here](https://emacsformacosx.com) and create a symbolic link from Emacs to `/usr/local/bin` by:
