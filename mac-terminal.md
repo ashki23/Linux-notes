@@ -18,6 +18,30 @@ To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` a
 ### Increase the cursor speed
 Go to the `System Preferences > Keyboard`, make `Key Repeat` faster and `Delay Until Repeat` shorter.
 
+### SSH
+To be able use ssh without asking for the passphrase, we need to add the passphrase to a ssh-agent. Note in here we are adding `id_rsa` key. First, let's start the ssh-agent in the background:
+
+```bash
+eval `ssh-agent -s`
+```
+
+After that open (or create) `~/.ssh/config` file and add:
+
+```bash
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+```
+
+Now run the following to add your SSH private key to the ssh-agent and store your passphrase in the keychain:
+
+```bash
+ssh-add -K ~/.ssh/id_rsa
+```
+
+You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
 ### Python3
 To have python3 and many more command line tools, install `xcode-select`. Use the following command in the terminal for installation:
 
