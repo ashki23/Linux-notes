@@ -26,6 +26,3 @@ After rebooting, we can easily connect to the Rasberry Pi through SSH or VNC usi
 To connect Pi through SSH open terminal in your computer and run `ssh pi@ip_address` or `ssh pi@raspberrypi.local`. To connect through VNC open [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) on your computer and insert the IP address. To learn more check [establishing a direct connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-direct) and a [cloud connection](https://www.realvnc.com/en/connect/docs/raspberry-pi.html#raspberry-pi-connect-cloud) for VNC Connect.
 
 If you are looking for booting a desktop Pi directly to the command-line, open `Main menu > Preferences > Raspberry Pi Configuration > System` and select Boot to CLI option. After rebooting Pi directly goes to the command-line mode. To go to the desktop mode run `startx`. 
-
----
-Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
