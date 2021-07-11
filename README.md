@@ -9,6 +9,3 @@ This is a general repository about Unix shell and Linux distros. You may find so
 - [Install Linux images on MicroSD cards](https://github.com/ashki23/Linux-notes/blob/master/image-linux.md)
 - [Debugging](https://github.com/ashki23/Linux-notes/blob/master/debugging.md)
 - [VirtualBox](https://github.com/ashki23/Linux-notes/blob/master/virtualbox.md)
-
----
-Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
