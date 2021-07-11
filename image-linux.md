@@ -43,6 +43,3 @@ dd if=/home/retropie-4.5.1-rpi2_rpi3.img of=/dev/sdb bs=4M status=progress
 - [Etcher](https://www.balena.io/etcher/) is a very useful tool to flash OS images to SD cards & USB drives
 - Use `-n` flag to add lables when formating a partion for example `sudo mkfs.vfat -n 'label' /dev/sdb` 
 - To format a SD card to NTFS, use `sudo mkfs.ntfs /dev/sdb`
-
----
-Copyright 2018-2019, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
