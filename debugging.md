@@ -175,6 +175,7 @@ Note that `XQuartz` should be installed in your Mac.
 
 
 ## Keyboard delay and repeat speed in Ubuntu 
+
 ```bash
 gsettings set org.gnome.desktop.peripherals.keyboard delay 250
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
@@ -183,3 +184,9 @@ gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
 gsettings reset org.gnome.desktop.peripherals.keyboard delay
 gsettings reset org.gnome.desktop.peripherals.keyboard repeat-interval
 ```
+
+## Bluetooth Keyboard and mouse disconnect when idle and slow reconnects when removed
+
+Increase the `IdleTimeout` in `/etc/bluetooth/input.conf` or set it to 0 to disable it, and set `FastConnectable` to true in `/etc/bluetooth/main.conf` to allow the devices to reconnect faster at the trade off of increased power consumption.
+
+Restart bluetooth after any changes by `sudo service bluetooth restart`.
