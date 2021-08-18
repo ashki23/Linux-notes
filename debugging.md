@@ -185,7 +185,7 @@ gsettings reset org.gnome.desktop.peripherals.keyboard delay
 gsettings reset org.gnome.desktop.peripherals.keyboard repeat-interval
 ```
 
-## Bluetooth Keyboard and mouse disconnect when idle and slow reconnects when removed
+## Bluetooth keyboard and mouse disconnect when idle and slow reconnect when removed
 
 Increase the `IdleTimeout` in `/etc/bluetooth/input.conf` or set it to 0 to disable it, and set `FastConnectable` to true in `/etc/bluetooth/main.conf` to allow the devices to reconnect faster at the trade off of increased power consumption.
 
