@@ -42,6 +42,13 @@ ssh-add -K ~/.ssh/id_rsa
 
 You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
+If you have some ssh timeout issues, you can send an alive tickle (e.g. every 300 seconds) to keep the connection by adding the following to the `config` file:
+
+```bash
+ClientAliveInterval 300
+ClientAliveCountMax 3
+```
+
 ### Python3
 To have python3 and many more command line tools, install `xcode-select`. Use the following command in the terminal for installation:
 
