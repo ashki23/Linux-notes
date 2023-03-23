@@ -38,7 +38,7 @@ ssh-add -K ~/.ssh/id_rsa
 
 You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-We added `ServerAliveInterval` option to keep the ssh connection alive, but if you still have some ssh timeout issues, you may modifying the following in `/etc/ssh/sshd_config` file:
+We added `ServerAliveInterval` option to keep the ssh connection alive, but if you still have some ssh timeout issues, you may modify the following options in `/etc/ssh/sshd_config`:
 
 ```bash
 ClientAliveInterval 60
