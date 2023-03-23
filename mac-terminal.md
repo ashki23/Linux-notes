@@ -29,8 +29,9 @@ After that open (or create) `~/.ssh/config` file and add:
 
 ```bash
 Host *
-  AddKeysToAgent yes
   UseKeychain yes
+  AddKeysToAgent yes
+  ServerAliveInterval 60
   IdentityFile ~/.ssh/id_rsa
 ```
 
