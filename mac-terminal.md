@@ -1,25 +1,25 @@
-# Some configs for mac terminal 
+# Some configs for Mac terminal 
 
 ### Zsh (or Bash) config
-Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in home directory and add the following commands:
+Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in the home directory and add the following commands:
 
 - `grep` default color option: `alias grep='grep --color=auto'`
 - `ls` colored directories: `alias ls='ls -G'`
 - `git` tab completion: `autoload -Uz compinit && compinit`
 
-**Note:** After adding above commands, use `source .zshrc` to apply changes.
+**Note:** After adding the above commands, use `source .zshrc` to apply changes.
 
 ### Use Option as Meta key
-To active this option, open `Terminal > Prefences` and select `Keyboard` tab and check `Use Option as Meta key`.
+To activate this option, open `Terminal > Prefences` and select `Keyboard` tab, and check `Use Option as Meta key`.
 
-### Exit shell and close the window
-To be able to close terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab and change `When the shell exits` to `Close the window`.
+### Exit the shell and close the window
+To be able to close the terminal window by `ctrl + d`, open `Terminal > Prefences` and select `Shell` tab, and change `When the shell exits` to `Close the window`.
 
 ### Increase the cursor speed
-Go to the `System Preferences > Keyboard`, make `Key Repeat` faster and `Delay Until Repeat` shorter.
+Go to the `System Preferences > Keyboard`, and make `Key Repeat` faster and `Delay Until Repeat` shorter.
 
 ### SSH
-To be able use ssh without asking for the passphrase, open (or create) `~/.ssh/config` file and add:
+To be able to use ssh without asking for the passphrase, open (or create) `~/.ssh/config` file and add:
 
 ```bash
 Host *
@@ -29,7 +29,7 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 ```
 
-Now run the following to start ssh-agent and add your SSH private key to the ssh-agent and store your passphrase in the keychain:
+Now run the following to start ssh-agent and adding your SSH private key to the ssh-agent and store your passphrase in the keychain:
 
 ```bash
 eval $(ssh-agent -s)
@@ -52,7 +52,12 @@ To have python3 and many more command line tools, install `xcode-select`. Use th
 xcode-select --install
 ```
 
-**Note:** Only press `install` and ignore `get Xcode`.
+**Note:** Only press `install` and ignore `get Xcode`. 
+
+Use `Python3` to open Python and use [Venv](https://ashki23.github.io/python-env.html#venv) to create envs and install packages using pip.
+
+### Miniconda
+Follow the instructions [here](https://docs.conda.io/projects/miniconda/en/latest/index.html#quick-command-line-install) to install and [here](https://docs.continuum.io/free/anaconda/install/uninstall/) to uninstall.
 
 ### R
 R can be installed from binary from [R mirror](https://mirror.las.iastate.edu/CRAN/). To [uninstall R](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS), run the following:
@@ -71,7 +76,7 @@ Download Emacs from [here](https://emacsformacosx.com) and create a symbolic lin
 sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
 ```
 
-Another option (better!) is crreating a virtual Conda env for Emacs.
+Another option (better!) is creating a virtual Conda env for Emacs.
 
 To set `emacs -nw` as default add the following line to the `.zshrc` (or `.bash_profile`):
 
