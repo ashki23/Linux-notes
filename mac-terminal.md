@@ -52,9 +52,9 @@ To have python3 and many more command line tools, install `xcode-select`. Use th
 xcode-select --install
 ```
 
-**Note:** Only press `install` and ignore `get Xcode`. 
+**Note:** Only press `install` and ignore `get Xcode`. After installation, use `Python3` to open Python and use [Venv](https://ashki23.github.io/python-env.html#venv) to create envs and install packages using pip.
 
-Use `Python3` to open Python and use [Venv](https://ashki23.github.io/python-env.html#venv) to create envs and install packages using pip.
+A newer Python version can be installed by [Pyenv](https://github.com/pyenv/pyenv). Pyenv can be installed by following [here](https://github.com/pyenv/pyenv#installation) and setting up the [environment setups](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv).    
 
 ### Miniconda
 Follow the instructions [here](https://docs.conda.io/projects/miniconda/en/latest/index.html#quick-command-line-install) to install and [here](https://docs.continuum.io/free/anaconda/install/uninstall/) to uninstall.
