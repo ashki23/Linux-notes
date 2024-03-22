@@ -76,8 +76,6 @@ Download Emacs from [here](https://emacsformacosx.com) and create a symbolic lin
 sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
 ```
 
-Another option (better!) is creating a virtual Conda env for Emacs.
-
 To set `emacs -nw` as default add the following line to the `.zshrc` (or `.bash_profile`):
 
 ```bash
