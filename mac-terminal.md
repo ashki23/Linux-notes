@@ -36,7 +36,23 @@ eval $(ssh-agent -s)
 ssh-add -K ~/.ssh/id_rsa
 ```
 
-You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). The following are two more config examples for GitHub and a GCP compute instance:
+```bash
+Host git
+  HostName github.com
+  User git
+  UseKeychain yes
+  AddKeysToAgent yes
+  ServerAliveInterval 60
+  IdentityFile ~/.ssh/id_rsa
+
+Host gcp
+  HostName <server.public.ip>
+  UseKeychain yes
+  AddKeysToAgent yes
+  ServerAliveInterval 60
+  IdentityFile ~/.ssh/id_rsa_gcp
+```
 
 We added `ServerAliveInterval` option to keep the ssh connection alive, but if you still have some ssh timeout issues, you may modify the following options in `/etc/ssh/sshd_config`:
 
