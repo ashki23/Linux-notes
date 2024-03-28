@@ -33,7 +33,7 @@ Now run the following to start ssh-agent and adding your SSH private key to the 
 
 ```bash
 eval $(ssh-agent -s)
-ssh-add -K ~/.ssh/id_rsa
+ssh-add --apple-use-keychain ~/.ssh/id_rsa
 ```
 
 You may find more details in [here](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). The following are two more config examples for GitHub and a GCP compute instance:
