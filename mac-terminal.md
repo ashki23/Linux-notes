@@ -6,6 +6,24 @@ Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in t
 - `grep` default color option: `alias grep='grep --color=auto'`
 - `ls` colored directories: `alias ls='ls -G'`
 - `git` tab completion: `autoload -Uz compinit && compinit`
+- Prompt format: `PROMPT="%F{green}%n@%m%f %F{blue}%1~%f $ "`
+
+The following is a smiple `.zshrc` file:
+
+```bash
+# Simple prompt format
+PROMPT="%F{green}%n@%m%f %F{blue}%1~%f $ "
+
+# Autoload tab completions
+autoload -Uz compinit && compinit
+
+# My aliases
+alias ls='ls -G'
+alias ll='ls -lh'
+alias grep='grep --color=auto'
+alias emacs='emacs -nw'
+alias nano='nano -z'
+```
 
 **Note:** After adding the above commands, use `source .zshrc` to apply changes.
 
