@@ -6,7 +6,7 @@ Open (create if not exist) `.zshrc` (or `.bash_profile` if using bash) file in t
 - `grep` default color option: `alias grep='grep --color=auto'`
 - `ls` colored directories: `alias ls='ls -G'`
 - `git` tab completion: `autoload -Uz compinit && compinit`
-- Prompt format: `PROMPT="%F{green}%n@%m%f %F{blue}%1~%f $ "`
+- Prompt format (Zsh only): `PROMPT="%F{green}%n@%m%f %F{blue}%1~%f $ "`
 
 The following is a smiple `.zshrc` file:
 
