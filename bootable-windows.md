@@ -1,5 +1,4 @@
 # Make a bootable Windows 10 USB
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html) - November 2019*
 
 To create a Windows bootable USB, follow the seteps:
 1. Download [Windows 10 image](https://www.microsoft.com/en-us/software-download/windows10ISO)
