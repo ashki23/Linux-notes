@@ -143,7 +143,7 @@ sudo rm -rf /usr/local/bin/Rscript
 ```
 
 ### Emacs
-You can install Emacs [manually](https://github.com/ashki23/Linux-notes/blob/master/install-emacs-binary.md) or take the easier route by downloading it from [here](https://emacsformacosx.com). If you choose to download, create a symbolic link using the following command to access Emacs from the terminal:
+You can install Emacs by downloading it from [here](https://emacsformacosx.com). After install, create a symbolic link using the following command to access Emacs from the terminal:
 
 ```bash
 sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
