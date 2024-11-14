@@ -1,5 +1,4 @@
 # The Unix Shell
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html)*
 
 The Shell is a program which uses command-line interface, instead of
 graphical user interfaces (GUI), to run other programs rather than doing
@@ -7,16 +6,16 @@ calculations itself. The most popular Unix Shell is Bash which is
 accessible by `ctrl+alt+t` keyboard shortcut in Linux computers. The
 following are some great Shell tutorials:
 
-  - [The Unix Shell](http://swcarpentry.github.io/shell-novice/)
-  - [Extra Unix Shell
-    Material](http://swcarpentry.github.io/shell-extras/)
-  - [Introduction to using the shell in a High-Performance Computing
-    context](https://hpc-carpentry.github.io/hpc-shell/)
+- [The Unix Shell](http://swcarpentry.github.io/shell-novice/)
+- [Extra Unix Shell
+  Material](http://swcarpentry.github.io/shell-extras/)
+- [Introduction to using the shell in a High-Performance Computing
+  context](https://hpc-carpentry.github.io/hpc-shell/)
 
 This tutorial provides a reference of some practical commands in the
 Unix Shell and important text editors in Bash.
 
------
+------------------------------------------------------------------------
 
 ## Tab completion
 
@@ -36,34 +35,32 @@ globbing pathnames typing `man 7 glob`.
 
 **Matching:**
 
-  - A `?` matches any single character. For example, `hd?` would look
-    for `hda`, `hdb`, `hdc` and every other letter/number between `a-z`,
-    `0-9`
-  - A `*` matches any string, including the empty string. For example,
-    `hd*` would look for `hd`, `hdf`, `hd-full`, and anything that
-    starts with `hd` also including `hd` itself. And `m*l` could by
-    `mail`, `mall`, `ml`, and anything that starts with an `m` and ends
-    with an `l`
+- A `?` matches any single character. For example, `hd?` would look for
+  `hda`, `hdb`, `hdc` and every other letter/number between `a-z`, `0-9`
+- A `*` matches any string, including the empty string. For example,
+  `hd*` would look for `hd`, `hdf`, `hd-full`, and anything that starts
+  with `hd` also including `hd` itself. And `m*l` could by `mail`,
+  `mall`, `ml`, and anything that starts with an `m` and ends with an
+  `l`
 
 **Character classes:**
 
-  - An expression `[ ]`, where the first character after the leading `[`
-    is not an `!`, matches any of the characters enclosed by the
-    brackets. For example, `m[a-d]m` can become anything that starts and
-    ends with `m` and has any character `a` to `d` in between.
-  - An expression `[! ]`, where the first character after the leading
-    `[` is an `!`, matches any character that is not enclosed by the
-    brackets.
+- An expression `[  ]`, where the first character after the leading `[`
+  is not an `!`, matches any of the characters enclosed by the brackets.
+  For example, `m[a-d]m` can become anything that starts and ends with
+  `m` and has any character `a` to `d` in between.
+- An expression `[! ]`, where the first character after the leading `[`
+  is an `!`, matches any character that is not enclosed by the brackets.
 
 ## Shell Expansions
 
-  - Brace expansion: is a mechanism by which arbitrary strings may be
-    generated for example `echo 1{2,3}4` returns 124 and 134 or `echo
-    {1..3}` returns 1,2, and 3
-  - Command substitution: it allows the output of a command to replace
-    the command itself for example, `echo $(date)` returns the actual
-    date. Note that for the environmental variables you cannot use `()`,
-    for example `echo $HOME` or `echo ${HOME}` is the correct way
+- Brace expansion: is a mechanism by which arbitrary strings may be
+  generated for example `echo 1{2,3}4` returns 124 and 134 or
+  `echo {1..3}` returns 1,2, and 3
+- Command substitution: it allows the output of a command to replace the
+  command itself for example, `echo $(date)` returns the actual date.
+  Note that for the environmental variables you cannot use `()`, for
+  example `echo $HOME` or `echo ${HOME}` is the correct way
 
 ## Basic commands
 
@@ -157,7 +154,7 @@ B
 ls
 ```
 
-`ls` command returns `grade.txt names.txt` that shows we already made
+`ls` command returns `grade.txt  names.txt` that shows we already made
 the files. Now, let’s see head, tail and number of lines in both files:
 
 ``` bash
@@ -355,9 +352,9 @@ To see all the test expressions see `man test`.
 
 Most popular text editors in Bash:
 
-  - Vi
-  - Nano
-  - Emacs
+- Vi
+- Nano
+- Emacs
 
 To open the text editors simply run `vi`, `nano` or `emacs -nw`. You may
 use `ctrl+z` to suspend the editor and return to the Bash terminal and
@@ -369,58 +366,58 @@ comparison to Nano but they are more difficult as well.
 The following are some important commands in Nano. Note that `^` is
 `ctrl` and `M-` is `alt`.
 
-  - `^s`: save
-  - `^o`: write out (save with a new name)
-  - `^x`: exit
-  - `^z`: suspend nano (if activated)
-  - `^k`: cut the line
-  - `M-6`: copy the line
-  - `^u`: uncut/paste the line
-  - `^w`: where is (search)
-  - `^\`: search and replace
-  - `M-g`: go to line
-  - `M-a`: select text
-  - `M-u`: undo
-  - `M-e`: redo
-  - `^t`: spelling check (need to install `spell` package)
-  - `^j`: justify text
-  - `^g`: help (`F2`)
+- `^s`: save
+- `^o`: write out (save with a new name)
+- `^x`: exit
+- `^z`: suspend nano (if activated)
+- `^k`: cut the line
+- `M-6`: copy the line
+- `^u`: uncut/paste the line
+- `^w`: where is (search)
+- `^\`: search and replace
+- `M-g`: go to line
+- `M-a`: select text
+- `M-u`: undo
+- `M-e`: redo
+- `^t`: spelling check (need to install `spell` package)
+- `^j`: justify text
+- `^g`: help (`F2`)
 
 The following are some important commands in Emacs. Note that `C-` is
 `ctrl` and `M-` is `alt`.
 
-  - `C-x C-c`: exit
-  - `C-z`: suspend
-  - `C-k`: kill the line
-  - `C-w`: cut the line/text
-  - `M-w`: copy the line/text
-  - `C-y`: uncut/paste the line/text (yank)
-  - `C-space arrow keys`: select text
-  - `C-shift arrow keys`: select paragraphs
-  - `C-x u`: undo
-  - `C-a`: move to the beginning of the line
-  - `C-e`: move to the end of the line
-  - `C-home`: move to the beginning of the buffer
-  - `C-end`: move to the end of the buffer
-  - `M-g g`: go to line
-  - `C-s`/`C-r`: search
-  - `M-%`: replace (`y` yes, `n` no, `!` all)
-  - `C-g`: stop a command
-  - `C-x C-f`: make/open a file as a new buffer
-  - `C-x b`: change the buffer
-  - `C-x k`: kill the buffer
-  - `C-x 1`: close other windows
-  - `C-x 0`/`q`: close/quit windows
-  - `C-x o`: switch to other windows
-  - `C-h ?`: help list
-  - `C-h t`: tutorial
-  - `C-h d`: search help for a pattern
-  - `C-h c`: show help for the command
-  - `M-x <command>`: run commands
-  - `M-x ispell`: spell check; enter the suggested `digit` or `a` to
-    accept or `r` to rewrite
-  - `M-x package-install`: install packages
-  - `M-x package-list-packages`: list of packages
+- `C-x C-c`: exit
+- `C-z`: suspend
+- `C-k`: kill the line
+- `C-w`: cut the line/text
+- `M-w`: copy the line/text
+- `C-y`: uncut/paste the line/text (yank)
+- `C-space arrow keys`: select text
+- `C-shift arrow keys`: select paragraphs
+- `C-x u`: undo
+- `C-a`: move to the beginning of the line
+- `C-e`: move to the end of the line
+- `C-home`: move to the beginning of the buffer
+- `C-end`: move to the end of the buffer
+- `M-g g`: go to line
+- `C-s`/`C-r`: search
+- `M-%`: replace (`y` yes, `n` no, `!` all)
+- `C-g`: stop a command
+- `C-x C-f`: make/open a file as a new buffer
+- `C-x b`: change the buffer
+- `C-x k`: kill the buffer
+- `C-x 1`: close other windows
+- `C-x 0`/`q`: close/quit windows
+- `C-x o`: switch to other windows
+- `C-h ?`: help list
+- `C-h t`: tutorial
+- `C-h d`: search help for a pattern
+- `C-h c`: show help for the command
+- `M-x <command>`: run commands
+- `M-x ispell`: spell check; enter the suggested `digit` or `a` to
+  accept or `r` to rewrite
+- `M-x package-install`: install packages
+- `M-x package-list-packages`: list of packages
 
 You may find more about Emacs in [here](emacs.html).
 
@@ -437,11 +434,7 @@ sort names.txt | head -n 5 | tail -n 3
 ```
 
 The first line shows the language of the program which is Bash in here.
-To run the program use:
-
-``` {bash}
-bash script.sh
-```
+To run the program use: `{bash}  bash script.sh`
 
 You may use the following program to show rows 3 to 5 of a given file.
 Use `nano script_1.sh` and insert the following lines:
@@ -461,8 +454,8 @@ bash script_1.sh names.txt
 ## Jackie
 ```
 
-Also we can write a program that works for any given files. Use `nano
-script_all.sh` and insert the following lines:
+Also we can write a program that works for any given files. Use
+`nano script_all.sh` and insert the following lines:
 
 ``` bash
 #!/bin/bash
@@ -501,4 +494,4 @@ To see the output run `cat Dori.txt`.
 
 ---
 
-Copyright 2018-2021, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Copyright, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)

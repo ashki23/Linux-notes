@@ -1,5 +1,4 @@
 # Linux: start from scratch
-*[Ashkan Mirzaee](https://ashki23.github.io/index.html)*
 
 Linux is a family of open source Unix-like operating systems based on
 the Linux kernel, an operating system kernel first released on September
@@ -13,7 +12,7 @@ article shows how to install and update Ubuntu distribution and provides
 a quick reference of helpful shortcuts, applications, and tips for
 software installation.
 
------
+------------------------------------------------------------------------
 
 ## Running Ubuntu
 
@@ -76,12 +75,12 @@ sudo apt install ubuntu-desktop
 
 The following is the list of options:
 
-  - `-h, --help`: show a short help
-  - `-v, --version`: show the program version
-  - `-c, --config-file`: configuration file; specify a configuration
-    file to use
-  - `-o, --option`: set a configuration option; this will set an
-    arbitrary configuration option
+- `-h, --help`: show a short help
+- `-v, --version`: show the program version
+- `-c, --config-file`: configuration file; specify a configuration file
+  to use
+- `-o, --option`: set a configuration option; this will set an arbitrary
+  configuration option
 
 For more help, use `apt -h`.
 
@@ -90,24 +89,24 @@ For more help, use `apt -h`.
 The following keyboard shortcuts can be very helpful to use your desktop
 and applications more efficiently.
 
-  - Activities: `super` (windows/command key)
-  - Change tabs: `super + tab`
-  - Change tab’s positions: `super + arrow keys`
-  - Switch between workspaces: `super + pg dn/pg up`
-  - Change keyboard language: `super + space`
-  - Minimize: `super + h`
-  - Desktop: `super + d`
-  - Lock screen: `super + l`
-  - Applications: `super + a`
-  - Messages: `super + m`
-  - Favorites app number: `super + q`
-  - Open the favorite app: `super + 1/2/3/...`
-  - Close the window: `alt + f4`
-    <!-- - unmaximize the window: `alt + f5` -->
-    <!-- - maximize the window: `alt + f10` -->
-  - Terminal prompt: `ctrl + alt + t`
-  - Top bar: `ctrl + alt + tab`
-  - Screenshot: `prt sc`
+- Activities: `super` (windows/command key)
+- Change tabs: `super + tab`
+- Change tab’s positions: `super + arrow keys`
+- Switch between workspaces: `super + pg dn/pg up`
+- Change keyboard language: `super + space`
+- Minimize: `super + h`
+- Desktop: `super + d`
+- Lock screen: `super + l`
+- Applications: `super + a`
+- Messages: `super + m`
+- Favorites app number: `super + q`
+- Open the favorite app: `super + 1/2/3/...`
+- Close the window: `alt + f4`
+  <!-- - unmaximize the window: `alt + f5` -->
+  <!-- - maximize the window: `alt + f10` -->
+- Terminal prompt: `ctrl + alt + t`
+- Top bar: `ctrl + alt + tab`
+- Screenshot: `prt sc`
 
 ### Ubuntu Software
 
@@ -115,13 +114,13 @@ Ubuntu Software is an small App Store including many useful software and
 packages. Following are some popular software available in Ubuntu
 Software:
 
-  - Slack
-  - Skype
-  - Tweaks
-  - GParted
-  - GNU Octave
-  - Sublime Text
-  - Synaptic Package Manager
+- Slack
+- Skype
+- Tweaks
+- GParted
+- GNU Octave
+- Sublime Text
+- Synaptic Package Manager
 
 ### The Unix Shell
 
@@ -190,10 +189,10 @@ We can add online accounts such as Google, Microsoft, and MS Exchange
 accounts to `Settings > Online Account`. For Microsoft Exchange account
 we need the following information:
 
-  - Email: user@mail.missouri.edu
-  - Password: user password
-  - Username: user@mail.missouri.edu
-  - Server: **outlook.office365.com**
+- Email: user@mail.missouri.edu
+- Password: user password
+- Username: user@mail.missouri.edu
+- Server: **outlook.office365.com**
 
 To be able to see MS Exchange calender and emails, you may install
 Evolution which is an integrated mail, calendar, tasks and contact
@@ -217,9 +216,9 @@ pkill evolution
 
 To get the best download speed when updating software, we can use the
 closest mirror to our location. To change mirror settings, go to
-`Software & Updates`, click `Ubuntu Software` tab and click `Download
-from` and choose `Other` and then choose `Selsect Best Server` option to
-find the best available server.
+`Software & Updates`, click `Ubuntu Software` tab and click
+`Download from` and choose `Other` and then choose `Selsect Best Server`
+option to find the best available server.
 
 ### Disable screen rotation
 
@@ -264,10 +263,10 @@ above commands.
 ### GRUB menu
 
 To see GRUB menu at boot-time, open `/etc/default/grub` file and change
-`GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and run `sudo
-update-grub` to apply changes.
+`GRUB_TIMEOUT` from 0 seconds to 5 seconds. Save changes and run
+`sudo update-grub` to apply changes.
 
------
+------------------------------------------------------------------------
 
 ## Software installation
 
@@ -282,12 +281,12 @@ following provides helpful tips to install some software in Ubuntu.
 Chrome is available [here](https://www.google.com/chrome/) to download.
 Useful Chrome keyboard shortcuts are listed in below.
 
-  - New tab: `ctrl + t`
-  - Close tab: `ctrl + w`
-  - Change tab: `ctrl + tab`
-  - New window: `ctrl + n`
-  - History: `ctrl + h`
-  - Add to favorites: `ctrl + d`
+- New tab: `ctrl + t`
+- Close tab: `ctrl + w`
+- Change tab: `ctrl + tab`
+- New window: `ctrl + n`
+- History: `ctrl + h`
+- Add to favorites: `ctrl + d`
 
 ### Git
 
@@ -615,4 +614,4 @@ There are several samples for R and Python in
 
 ---
 
-Copyright 2018-2021, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+Copyright, [Ashkan Mirzaee](https://ashki23.github.io/index.html) | Content is available under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | Sourcecode licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
