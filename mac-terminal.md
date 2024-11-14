@@ -79,19 +79,58 @@ ClientAliveInterval 60
 ClientAliveCountMax 3
 ```
 
-### Python3
-To have python3 and many more command line tools, install `xcode-select`. Use the following command in the terminal for installation:
+### Python 3
+Select an option based on your requirements:
+
+**Option 1 - Xcode:** To access Python 3 (an older version) and other command line tools, install Xcode Command Line Tools by running the following command in the terminal:
 
 ```bash
 xcode-select --install
 ```
 
-**Note:** Only press `install` and ignore `get Xcode`. After installation, use `Python3` to open Python and use [Venv](https://ashki23.github.io/python-env.html#venv) to create envs and install packages using pip.
+Only press `install` and ignore `get Xcode`. 
 
-A newer Python version can be installed by [Pyenv](https://github.com/pyenv/pyenv). Pyenv can be installed by following [here](https://github.com/pyenv/pyenv#installation) and setting up the [environment setups](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv).    
+**Option 2 - Python:** To install a newer version of Python on a Mac without using a package manager like Homebrew, you can download and install it directly from the official Python website. Here’s how:
 
-### Miniconda
-Follow the instructions [here](https://docs.conda.io/projects/miniconda/en/latest/index.html#quick-command-line-install) to install and [here](https://docs.continuum.io/free/anaconda/install/uninstall/) to uninstall.
+1. **Download the Python installer:**
+   - Go to the [official Python website](https://www.python.org/).
+   - Navigate to the "Downloads" section and select the latest stable version for macOS.
+
+2. **Run the installer:**
+   - Once the `.pkg` file has downloaded, open it to run the Python installer.
+   - Follow the on-screen instructions to install Python.
+
+3. **Verify the installation:**
+   - Open a terminal and check the Python version by running:
+     ```bash
+     python3 --version
+     ```
+     or
+     ```bash
+     python3.x --version  # Replace x with the specific version number
+     ```
+   - This should display the newly installed Python version.
+
+4. **Update your PATH (if necessary):**
+   - Depending on your setup, you might need to add the new Python version to your PATH to make it the default. 
+   - You can add the following line to your shell profile file (`.zshrc` or `.bash_profile`), replacing `/path/to/python3.x` with the actual path where Python was installed:
+     ```bash
+     export PATH="/path/to/python3.x:$PATH"
+     ```
+   - Reload your profile by running `source ~/.zshrc` (or the relevant profile file).
+
+5. **Set up `python` as an alias for `python3` (optional):**
+   - To simplify commands, you can create an alias for `python3` as `python` in your profile file:
+     ```bash
+     alias python=python3
+     ```
+   - Reload the profile with `source ~/.zshrc`.
+
+**Option 3 - Miniconda:** You can also install Miniconda to access Python. Follow the instructions [here](https://docs.conda.io/projects/miniconda/en/latest/index.html#quick-command-line-install) to install and [here](https://docs.continuum.io/free/anaconda/install/uninstall/) to uninstall.
+
+**Option 4 - Pyenv:** A newer Python version can be installed by [Pyenv](https://github.com/pyenv/pyenv). Pyenv can be installed by following [here](https://github.com/pyenv/pyenv#installation) and setting up the [environment setups](https://github.com/pyenv/pyenv#set-up-your-shell-environment-for-pyenv).    
+
+After installation, use `Python3` to open Python and use [Venv](https://ashki23.github.io/python-env.html#venv) to create envs and install packages using pip.
 
 ### R
 R can be installed from binary from [R mirror](https://mirror.las.iastate.edu/CRAN/). To [uninstall R](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS), run the following:
@@ -104,9 +143,9 @@ sudo rm -rf /usr/local/bin/Rscript
 ```
 
 ### Emacs
-Download Emacs from [here](https://emacsformacosx.com) and create a symbolic link from Emacs to `/usr/local/bin` by:
+You can install Emacs [manually](https://github.com/ashki23/Linux-notes/blob/master/install-emacs-binary.md) or take the easier route by downloading it from [here](https://emacsformacosx.com). If you choose to download, create a symbolic link using the following command to access Emacs from the terminal:
 
-```
+```bash
 sudo ln -s /Applications/Emacs.app/Contents/MacOS/Emacs /usr/local/bin/emacs
 ```
 
@@ -132,3 +171,10 @@ As a basic Emacs config, create `.emacs` file in the home directory and add the 
 ;; Turn on bracket match highlight
 (show-paren-mode 1)
 ```
+
+### Pandoc
+To install Pandoc on a Mac, you can download the latest release directly from the [Pandoc website](https://pandoc.org/installing.html). Here are the steps:
+- Download the latest release for macOS (it should be a `.pkg` file).
+- Open the downloaded `.pkg` file by double-clicking on it. This will launch the installer. The installer will place the `pandoc` executable in `/usr/local/bin` by default.
+
+When a new version of Pandoc is released, you’ll need to repeat this process to update it. Just download the latest `.pkg` file and install it, which will overwrite the older version.
